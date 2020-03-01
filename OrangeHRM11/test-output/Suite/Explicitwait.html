@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>TestNG:  Explicitwait</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Explicitwait</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 17 20:32:45 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>23 seconds (23573 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Day_018_Waits.TC01_Explicit_Wait.Login_Test()'><b>Login_Test</b><br>Test class: Day_018_Waits.TC01_Explicit_Wait<br/>
+<a href="#Output-1572442646" onClick='toggleBox("Output-1572442646", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1572442646" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1572442646">
+<table> <tr >  <img   style="border:1px solid black;"      src="C:\HTML Report\HtmlTemplates\Logo.JPEG"></tr><tr   ><center><font color="red"  size="15" >TC01_Login</font></center></tr><tr bgcolor="#9370DB"> <th width="100px"> <center><font color="white"  size="4" >Steps</font></center><font color="white"  size="4" ></font></center> </th> <th width="450px" ><center><font color="white"  size="4" >Details </font> </center></th> <th width="100px" ><center><font color="white"  size="4" >Status</font></center></th>  <th  width="250px"  ><center><font color="white"  size="4" >Screen Shots</font></center></th> <th width="250px"  ><center><font color="white"  size="4" >Date & Time</font></center></th> 	 </tr>       <br/>
+ <tr bgcolor="#eee"> <th width="100px"> <center>Step&nbsp;1</center> </th> <th width="450px" ><center><b><font color='black'>   Opened Orange HRM</b> </font></center></th> <th width="100px" ><center><img src='file:///C:\HTML Report\HtmlTemplates\passed.ico'    +     "width="30" + height="30"></img></center></th>  <th  width="250px"  ><center><a href=C:/HTML Report/test-output/TempScreenShots/TC01_Login_2020_Feb_17_8_32_57_539_PM/17_Feb_2020 8_33_01_149 PM.png target="popup" onclick="window.open('C:/HTML Report/test-output/TempScreenShots/TC01_Login_2020_Feb_17_8_32_57_539_PM/17_Feb_2020 8_33_01_149 PM.png','popup','width=600,height=600'); return false;"> ScreenShot</a> </center></th> <th width="250px"  ><center>2020_Feb_17_8_33_02_127_PM</center></th> 	 </tr>      <br/>
+ <tr bgcolor="#ddd"> <th width="100px"> <center>Step&nbsp;2</center> </th> <th width="450px" ><center><b><font color='black'>   Username Entered</b> </font></center></th> <th width="100px" ><center><img src='file:///C:\HTML Report\HtmlTemplates\passed.ico'    +     "width="30" + height="30"></img></center></th>  <th  width="250px"  ><center><a href=C:/HTML Report/test-output/TempScreenShots/TC01_Login_2020_Feb_17_8_32_57_539_PM/17_Feb_2020 8_33_02_449 PM.png target="popup" onclick="window.open('C:/HTML Report/test-output/TempScreenShots/TC01_Login_2020_Feb_17_8_32_57_539_PM/17_Feb_2020 8_33_02_449 PM.png','popup','width=600,height=600'); return false;"> ScreenShot</a> </center></th> <th width="250px"  ><center>2020_Feb_17_8_33_02_910_PM</center></th> 	 </tr>      <br/>
+ <tr bgcolor="#eee"> <th width="100px"> <center>Step&nbsp;3</center> </th> <th width="450px" ><center><b><font color='black'>   no such element: Unable to locate element: {"method":"css selector","selector":"*[name='txtPassword22222']"}
+  (Session info: chrome=80.0.3987.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VL2N6EH', ip: '192.168.29.199', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.106, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Annnn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53857}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 160e18eabad25a93018f7933124fe4b2
+*** Element info: {Using=name, value=txtPassword22222}</b> </font></center></th> <th width="100px" ><center><img src='file:///C:\HTML Report\HtmlTemplates\failed.ico'    +     "width="30" + height="30"></img></center></th>  <th  width="250px"  ><center><a href=C:/HTML Report/test-output/TempScreenShots/TC01_Login_2020_Feb_17_8_32_57_539_PM/17_Feb_2020 8_33_07_970 PM.png target="popup" onclick="window.open('C:/HTML Report/test-output/TempScreenShots/TC01_Login_2020_Feb_17_8_32_57_539_PM/17_Feb_2020 8_33_07_970 PM.png','popup','width=600,height=600'); return false;"> ScreenShot</a> </center></th> <th width="250px"  ><center>2020_Feb_17_8_33_08_341_PM</center></th> 	 </tr>      <br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Day_018_Waits.TC01_Explicit_Wait@49dc7102</td></tr>
+</table><p>
+</body>
+</html>
